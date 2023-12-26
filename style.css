@@ -1,10 +1,84 @@
-.primertitulo {
-  color: red;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.miboton {
-  background-color: beige;
-  border-radius: 5px;
-  width: 100px;
-  height: 30px;
+section {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+.container {
+  height: 400px;
+  width: 250px;
+  background-color: rgb(245, 240, 240);
+  border-radius: 10px;
+  border: solid 1px rgb(206, 199, 199);
+  box-shadow: 5px 5px 5px rgb(182, 181, 181);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  position: relative;
+  transform: rotate(-5deg);
+  transition: scale 1s ease-in-out ;
+}
+.container:hover {
+  scale: 1.2;
+}
+
+.top {
+  display: flex;
+    flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.top img {
+  width: 30px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+.main img:nth-child(3) {
+  transform: rotate(180deg);
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+
+  transform: rotate(180deg);
+}
+
+.bottom img {
+  width: 30px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main img {
+  width: 50px;
 }
